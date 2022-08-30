@@ -5,18 +5,51 @@
     <meta charset="UTF-8">
     <title>Ping Pong Score Keeper</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-    <select id="playto">
-        <option value="3">3</option>
-        <option value="5">5</option>
-        <option value="8">8</option>
-    </select>
-    <button id="p1Button">+1 Player One</button>
-    <button id="p2Button">+1 Player Two</button>
-    <button id="reset">Reset</button>
-
-    <script src="script.js"></script>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-16by9"><img
+                                    src="https://cdn.pixabay.com/photo/2019/03/10/14/05/table-tennis-4046279_960_720.jpg"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">Ping Pong Score Keeper</p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-size-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                                </h1>
+                                <p class="subtitle">Use the buttons below to keep score</p>
+                                <label for="playto" class="label is-large is-inline">Playing to</label>
+                                <div class="select">
+                                    <select id="playto">
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1Button" class="is-primary button card-footer-item is-large">+1 Player One</button>
+                            <button id="p2Button" class="is-info button card-footer-item is-large">+1 Player Two</button>
+                            <button id="reset" class="is-danger button card-footer-item is-large">RESET</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
 </body>
 </html>
